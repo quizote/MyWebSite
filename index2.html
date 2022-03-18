@@ -28,7 +28,7 @@
 </form>
     </div>
 
-    <div class="container" style="margin: 50px;"">
+    <div class="container" style="margin: 50px ;"">
     <h3><strong>About me</strong></h3>
       <p>I am passionate about <strong>IT</strong> in general. I hope to graduate from UCF in Spring 2023 with an IT degree, and a minor in cybersecurity. I have currently attained A+ and Network+
          CompTIA Certifications and plan on getting Security+, CYSA+ and also CCNA certified. <strong>IT</strong> is all about the certifications. Hopefully, I can find work as a Cyber expert or
@@ -146,6 +146,21 @@
     <a class="footer-link" href="index4.html">Assignments</a>
     <p class="copyright">© 2022 Dankwa Quist.</p>
   </div>
+  <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'quizote.github.io/MyWebsite/';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
 
 
 

@@ -15,6 +15,17 @@
     <a class="footer-link" href="index2.html">About Me</a>
     <a class="footer-link" href="index3.html">Reflective Writing</a>
     <a class="footer-link" href="index4.html">Assignments</a>
+    <form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="Search..."
+   aria-label="Search through site content">
+   <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941
+      36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294
+       0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623
+        408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091
+        218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+</form>
    </div>
 
     <div class="container" style="margin: 50px;">
@@ -31,7 +42,7 @@
 <p>Etter talks about the concept of MVP in the software industry. MVP stands for minimal viable product. The idea behind the concept being that a product is created with minimal features but providing sufficient customer value. Early adopters then use the product, create feedback and the feedback can be used to enhance the product further. This concept can be applied to writing where the writer puts together an outline that includes important things required for the document. Let coworkers review them, gather feedback, improve it, and then release them to the world as well.</p>
 <p>Lastly, Etter talks about style guides and templates. Older writers tend to be very conscious of adhering to a certain style to create consistency in the documents, at the expense of actual useful information. Etter thinks it is better to allow for flexibility in writing to accommodate more ideas, than focusing on style and presentation, which can make a document wordier than it necessarily should be.</p>
 <p>In conclusion, technical writing is a continuous process. There is no need to try and write the perfect document the first time and move on to the next. Emphasis should be on writing the content, understanding the product, gathering feedback from early users as quickly as possible. Then also pushing updates to the document out as quickly as possible. In effect, the document is a living document and will be updated regularly to continue improving the content and make it better.</p>
- 
+
 
     </div>
  <div class="bottom-container">
@@ -43,6 +54,21 @@
     <a class="footer-link" href="index4.html">Assignments</a>
     <p class="copyright">© 2022 Dankwa Quist.</p>
   </div>
+  <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'quizote.github.io/MyWebsite/';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
 
 
   </body>

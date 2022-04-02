@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dankwa Quist</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="bottom-container">
+    <a class="footer-link" href="index.html">Home</a>
+    <a class="footer-link" href="https://www.linkedin.com/in/dankwa-quist-55713221/">LinkedIn</a>
+    <a class="footer-link" href="index2.html">About Me</a>
+    <a class="footer-link" href="index3.html">Reflective Writing</a>
+    <a class="footer-link" href="index4.html">Assignments</a>
+    <form id="form" role="search">
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+      <button><svg viewBox="0 0 1024 1024">
+          <path class="path1" d="M848.471 928l-263.059-263.059c-48.941
+      36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294
+       0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623
+        408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091
+        218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="container" style="margin: 50px;">
+    <p>
+    <h3><strong>Reflective Writing</strong></h3>
+    </p>
+
+    <h5>Reflective Writing 7</h5>
+    <p>For this reflective writing assignment, I am reviewing Chapter Eleven of the textbook. This chapter is about the use of lists and tables when writing. These are summarized into six guidelines for effective use of lists and tables.</p>
+    <p>The first guideline states “Use bulleted lists for items or options”. Essentially, when there are multiple items being mentioned it is best to put them in a bulleted list. This makes find specific items easy and helps readers check items off
+      manually without too much mental effort.</p>
+    <p>The next guideline is “Match bullets to your site’s personality”. This simply implies to get creative if there is a chance to do so. Regular bullets (black round dots) are generally accepted. However, if the content being created is for
+      example, more artistic, it is ok to also get more creative with different styles of bullets to match the artistic design. Instead of just round dots, bullets could be actual objects like a car or an animal.</p>
+    <p>“Use numbered lists for instructions” is the third guideline. Anytime instructions are given like how to arrange a party or steps to pay a bill, it is a great idea to use numbered lists. This has the advantage of letting the reader immediately
+      see how many steps are required, getting the correct order of steps, being able to identify a single step and being able to come back to it, if necessary. As a content creator, a numbered list helps to ensure no step is forgotten, steps are in
+      the correct order, and being able to verify that the steps actually work as expected, i.e. testing the steps one-by-one. It is also recommended to use “if… else” statements where appropriate if steps don’t follow each other exactly and keep
+      paragraphs relatively short. There is nothing wrong also with including a picture to explain a step to the reader.</p>
+    <p>The fourth guideline states “Keep most lists short”. Two recommendations are made here, the first is to make a list no more than <strong>five to ten</strong> items long if the material is very unfamiliar. The second recommendation says it is
+      ok to use long lists if the material presented is familiar. An example of a familiar list is the states that make up the USA. Since most people would know there are fifty states, it is ok to have a list that is fifty items long.</p>
+    <p>The fifth guideline is “Try to start list items the same way”. Most people are pattern-oriented and maintaining the same pattern helps readers to read lists faster and more easily.</p>
+    <p>The final guideline is “Format lists well”. Formatting a list is all about how the information in the list is presented. Four keys are mentioned to help with formatting, namely, <strong>reducing space between the introduction and list, put
+        space between long list items, wrap lines under each other</strong> and <strong>put what happens on a line by itself.</strong> Formatting also presents a choice of whether to use a table or to use a list. The distinction here is that a table
+      should be used for “if..then” situations. “if” in this instance maybe the first column, and “then” the subsequent columns. A table should be used in instances where one list item can reference multiple lists. A list should be used if only one
+      item is being referenced. There are a further six guidelines mentioned for how to make a useful table.</p>
+    <p>In conclusion, using lists keeps information well organized, and helps readers to easily navigate the page. This chapter was very informative and made me appreciate the use of lists in my writing.</p>
+
+
+  </div>
+  <div class="bottom-container">
+
+    <a class="footer-link" href="index.html">Home</a>
+    <a class="footer-link" href="https://www.linkedin.com/in/dankwa-quist-55713221/">LinkedIn</a>
+    <a class="footer-link" href="index2.html">About Me</a>
+    <a class="footer-link" href="index3.html">Reflective Writing</a>
+    <a class="footer-link" href="index4.html">Assignments</a>
+    <p class="copyright">© 2022 Dankwa Quist.</p>
+  </div>
+  <script>
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'quizote.github.io';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + q.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    f.addEventListener('submit', submitted);
+  </script>
+
+
+</body>
+
+</html>
